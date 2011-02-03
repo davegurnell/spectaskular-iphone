@@ -14,7 +14,7 @@
 
 @property (nonatomic, retain) NSString *name;
 
-- (Task *) initWithName:(NSString *)initialName;
-- (Task *) initWithTask:(Task *)other;
+- (id) initWithName:(NSString *)initialName;
+- (id) initWithTask:(Task *)other;
 
 @end

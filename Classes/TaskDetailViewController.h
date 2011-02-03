@@ -26,6 +26,5 @@
 
 - (void)donePressed;
 - (void)cancelPressed;
-- (void)leaveView;
 
 @end

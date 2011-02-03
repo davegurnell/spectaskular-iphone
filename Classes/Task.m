@@ -12,22 +12,34 @@
 
 @synthesize name;
 
-- (Task *) init {
-	[super init];
-	self.name = @"New task";
+- (id) init {
+	return [self initWithName:@""];
+}
+
+- (id) initWithName:(NSString *)initialName {
+	self = [super init];
+	if(self) {
+		self.name = initialName;
+	}
 	return self;
 }
 
-- (Task *) initWithName:(NSString *)initialName {
-	[super init];
-	self.name = initialName;
+- (id) initWithTask:(Task *)other {
+	self = [super init];
+	if(self) {
+		self.name = other.name;
+	}
 	return self;
 }
 
-- (Task *) initWithTask:(Task *)other {
-	[super init];
-	self.name = other.name;
-	return self;
+- (void) dealloc {
+	self.name = nil;
+	[super dealloc];
+}
+
+- (NSString *) description {
+	NSString *desc = [[[NSString alloc] initWithFormat:@"<Task: %@>", self.name] autorelease];
+	return desc;
 }
 
 @end
