@@ -38,8 +38,7 @@
 }
 
 - (NSString *) description {
-	NSString *desc = [[[NSString alloc] initWithFormat:@"<Task: %@>", self.name] autorelease];
-	return desc;
+	return [NSString stringWithFormat:@"<Task: %@>", self.name];
 }
 
 @end

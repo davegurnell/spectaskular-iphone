@@ -28,7 +28,6 @@
 										 target:self
 										 action:@selector(editPressed)] autorelease];
 
-	[editButton release];	
 	[super viewDidLoad];
 }
 
@@ -65,10 +64,6 @@
 
 	NSUInteger row = [indexPath row];
 	Task *task = [self.tasks objectAtIndex:row];
-	
-	NSLog(@"Rendering row %d", row);
-	NSLog(@"Rendering task %@", task);
-	NSLog(@"Rendering cell %@", cell);
 	
 	cell.textLabel.text = task.name;
 	
