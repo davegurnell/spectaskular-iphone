@@ -14,7 +14,6 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		555A6DF912F97CEB003FE4B3 /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555A6DF812F97CEB003FE4B3 /* TaskListViewController.m */; };
-		555A6E3512F98358003FE4B3 /* PredefinedTasks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 555A6E3412F98358003FE4B3 /* PredefinedTasks.plist */; };
 		555A6E6012F98C4D003FE4B3 /* TaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555A6E5E12F98C4D003FE4B3 /* TaskDetailViewController.m */; };
 		555A6E6112F98C4D003FE4B3 /* TaskDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 555A6E5F12F98C4D003FE4B3 /* TaskDetailViewController.xib */; };
 		555A6E9A12F9917B003FE4B3 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 555A6E9912F9917B003FE4B3 /* Task.m */; };
@@ -34,7 +33,6 @@
 		32CA4F630368D1EE00C91783 /* Spectaskular_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spectaskular_Prefix.pch; sourceTree = "<group>"; };
 		555A6DF712F97CEB003FE4B3 /* TaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaskListViewController.h; path = ../TaskListViewController.h; sourceTree = "<group>"; };
 		555A6DF812F97CEB003FE4B3 /* TaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaskListViewController.m; path = ../TaskListViewController.m; sourceTree = "<group>"; };
-		555A6E3412F98358003FE4B3 /* PredefinedTasks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PredefinedTasks.plist; path = Classes/PredefinedTasks.plist; sourceTree = "<group>"; };
 		555A6E5D12F98C4D003FE4B3 /* TaskDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailViewController.h; sourceTree = "<group>"; };
 		555A6E5E12F98C4D003FE4B3 /* TaskDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailViewController.m; sourceTree = "<group>"; };
 		555A6E5F12F98C4D003FE4B3 /* TaskDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TaskDetailViewController.xib; path = Classes/TaskDetailViewController.xib; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				555A701F12F9C8F9003FE4B3 /* Icon.png */,
 				555A702012F9C8F9003FE4B3 /* Icon.pxm */,
 				555A6E5F12F98C4D003FE4B3 /* TaskDetailViewController.xib */,
-				555A6E3412F98358003FE4B3 /* PredefinedTasks.plist */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Spectaskular-Info.plist */,
 			);
@@ -176,7 +173,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				555A6E3512F98358003FE4B3 /* PredefinedTasks.plist in Resources */,
 				555A6E6112F98C4D003FE4B3 /* TaskDetailViewController.xib in Resources */,
 				555A702112F9C8F9003FE4B3 /* Icon.png in Resources */,
 				555A702212F9C8F9003FE4B3 /* Icon.pxm in Resources */,

@@ -2,8 +2,8 @@
 {
 	1D3623240D0F684500981E51 /* SpectaskularAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1325, 772}}";
-			sepNavSelRange = "{535, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1325, 795}}";
+			sepNavSelRange = "{270, 39}";
 			sepNavVisRange = "{0, 572}";
 			sepNavWindowFrame = "{{19, 140}, {1158, 883}}";
 		};
@@ -674,9 +674,9 @@
 	};
 	555A6DF812F97CEB003FE4B3 /* TaskListViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1325, 1664}}";
-			sepNavSelRange = "{256, 0}";
-			sepNavVisRange = "{0, 1762}";
+			sepNavIntBoundsRect = "{{0, 0}, {777, 1729}}";
+			sepNavSelRange = "{1097, 0}";
+			sepNavVisRange = "{144, 1548}";
 			sepNavWindowFrame = "{{65, 98}, {1158, 883}}";
 		};
 	};
@@ -691,6 +691,12 @@
 		vrLoc = 0;
 	};
 	555A6E3412F98358003FE4B3 /* PredefinedTasks.plist */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.plist.xml;
+		name = PredefinedTasks.plist;
+		path = /Users/dave/dev/projects/Spectaskular/Classes/PredefinedTasks.plist;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavWindowFrame = "{{42, 119}, {1158, 883}}";
 		};
@@ -706,8 +712,8 @@
 	555A6E5E12F98C4D003FE4B3 /* TaskDetailViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1325, 1092}}";
-			sepNavSelRange = "{1598, 0}";
-			sepNavVisRange = "{535, 1299}";
+			sepNavSelRange = "{1677, 0}";
+			sepNavVisRange = "{423, 1411}";
 			sepNavWindowFrame = "{{88, 77}, {1158, 883}}";
 		};
 	};
@@ -720,8 +726,8 @@
 	};
 	555A6E9912F9917B003FE4B3 /* Task.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1236, 772}}";
-			sepNavSelRange = "{168, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1325, 795}}";
+			sepNavSelRange = "{418, 0}";
 			sepNavVisRange = "{0, 639}";
 		};
 	};
