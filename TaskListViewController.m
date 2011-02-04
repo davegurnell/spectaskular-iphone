@@ -60,6 +60,7 @@
 									   reuseIdentifier:TaskCellIdentifier] autorelease];
 	}
 
+	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 	cell.showsReorderControl = YES;
 
 	NSUInteger row = [indexPath row];
@@ -70,7 +71,7 @@
 	return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
 	Task *task = [self.tasks objectAtIndex:[indexPath row]];
 	[self showDetailView:task addingToList:NO];
 }
