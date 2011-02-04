@@ -13,6 +13,7 @@
 
 @interface TaskDetailViewController( Private )
 
+- (NSMutableArray *)tasks;
 - (void)leaveView;
 
 @end
@@ -31,6 +32,11 @@
 		self.navigationItem.title = task.name;
 	}
 	return self;
+}
+
+- (NSMutableArray *)tasks {
+	SpectaskularAppDelegate *delegate = [UIApplication sharedApplication].delegate;
+	return delegate.tasks;
 }
 
 - (void) viewDidLoad {
@@ -53,15 +59,6 @@
 	[super viewWillAppear:animated];
 }
 
-// TODO: Move to [TaskListViewController viewWillAppear]
-- (void) viewWillDisappear:(BOOL)animated {
-	NSArray *stack = [[self navigationController] viewControllers];
-	NSInteger parentIndex = [stack count] - 1;
-	TaskListViewController *parent = [stack objectAtIndex:parentIndex];
-	[parent.tableView reloadData];
-	[super viewWillDisappear:animated];
-}
-
 - (void) dealloc {
 	self.task = nil;
     [super dealloc];
@@ -76,11 +73,7 @@
 	NSLog(@"Done task %@", task);
 
 	if(self.addingToList) {
-		NSArray *stack = [[self navigationController] viewControllers];
-		NSInteger parentIndex = [stack count] - 2;
-		TaskListViewController *parent = [stack objectAtIndex:parentIndex];
-		[parent.tasks insertObject:self.task atIndex:0];
-		NSLog(@"Done tasks %@", parent.tasks);
+		[[self tasks] insertObject:self.task atIndex:0];
 	}
 
 	[self leaveView];

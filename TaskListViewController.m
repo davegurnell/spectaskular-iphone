@@ -6,16 +6,25 @@
 //  Copyright 2011 Untyped. All rights reserved.
 //
 
+#import "SpectaskularAppDelegate.h"
 #import "TaskListViewController.h"
 #import "TaskDetailViewController.h"
 
+@interface TaskListViewController( Private )
+
+- (NSMutableArray *)tasks;
+
+@end
+
+
 @implementation TaskListViewController
 
-@synthesize tasks;
+- (NSMutableArray *)tasks {
+	SpectaskularAppDelegate *delegate = [UIApplication sharedApplication].delegate;
+	return delegate.tasks;
+}
 
 - (void)viewDidLoad {
-	[self loadTasks];
-		
 	self.navigationItem.leftBarButtonItem =
 		[[[UIBarButtonItem alloc] initWithTitle:@"Add"
 										  style:UIBarButtonItemStylePlain
@@ -31,25 +40,16 @@
 	[super viewDidLoad];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-	return YES;
-}
-
-- (void)viewDidUnload {
-	self.tasks = nil;
-	[super viewDidUnload];
-}
-
-- (void)dealloc {
-	[self.tasks release];
-	[super dealloc];
+- (void)viewWillAppear:(BOOL)animated {
+	[self.tableView reloadData];
+	[super viewWillAppear:animated];
 }
 
 #pragma mark -
 #pragma mark Table view controller
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [self.tasks count];
+	return [[self tasks] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -86,8 +86,6 @@
 	NSInteger sourceRow = [sourceIndexPath row];
 	NSInteger destinationRow = [destinationIndexPath row];
 	
-	NSLog(@"Swapping %d %d", sourceRow, destinationRow);
-	
 	if(sourceRow != destinationRow) {
 		Task *sourceTask = [[self.tasks objectAtIndex:sourceRow] retain];
 		Task *destinationTask = [[self.tasks objectAtIndex:destinationRow] retain];
@@ -122,55 +120,6 @@
 	TaskDetailViewController *detail = [[TaskDetailViewController alloc] initWithTask:task addingToList:adding];
 	[self.navigationController pushViewController:detail animated:YES];
 	[detail release];
-}
-
-#pragma mark -
-#pragma mark Persistence
-
-- (NSString *)tasksPath {
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString *dir = [paths objectAtIndex:0];
-	NSString *path = [dir stringByAppendingPathComponent:@"tasks.plist"];
-	return path;
-}
-
-- (void)loadTasks {
-	NSString *path = [self tasksPath];
-	NSArray *data = nil;
-	if([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-		data = [[NSMutableArray alloc] initWithContentsOfFile:path];
-	} else {
-		data = [[NSMutableArray alloc] initWithObjects: @"Buy coffee", @"Feed cat", @"Write awesome software", nil]; 
-	}
-	
-	NSInteger countTasks = [data count];
-	NSMutableArray *loadedTasks = [[NSMutableArray alloc] init];
-	
-	for(int i = 0; i < countTasks; i++) {
-		Task *task = [[Task alloc] initWithName:[data objectAtIndex:i]];
-		[loadedTasks addObject:task];
-		[task release];
-	}
-	
-	self.tasks = loadedTasks;
-
-	[loadedTasks release];
-	[data release];
-}
-
-- (void)saveTasks {
-	NSString *path = [self tasksPath];
-	NSMutableArray *data = [[NSMutableArray alloc] init];
-
-	NSInteger countTasks = [self.tasks count];
-	for(int i = 0; i < countTasks; i++) {
-		Task *task = [self.tasks objectAtIndex:i];
-		[data addObject:task.name];
-	}
-	
-	// BOOL success = 
-	[data writeToFile:path atomically:YES];
-	[data release];
 }
 
 @end

@@ -11,15 +11,8 @@
 
 @interface TaskListViewController : UITableViewController {
 
-	NSMutableArray *tasks;
-	
 }
 
-@property (nonatomic, retain) NSMutableArray *tasks;
-
 - (void) showDetailView:(Task *)task addingToList:(BOOL)adding;
-- (NSString *) tasksPath;
-- (void) loadTasks;
-- (void) saveTasks;
 
 @end
