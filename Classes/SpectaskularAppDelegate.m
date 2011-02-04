@@ -11,10 +11,9 @@
 
 @interface SpectaskularAppDelegate( Private )
 
-- (NSString *) tasksPath;
+- (NSString *)tasksPath;
 
 @end
-
 
 @implementation SpectaskularAppDelegate
 

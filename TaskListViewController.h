@@ -9,10 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "Task.h";
 
-@interface TaskListViewController : UITableViewController {
+@interface TaskListViewController : UITableViewController
 
-}
-
-- (void) showDetailView:(Task *)task addingToList:(BOOL)adding;
+- (void)showDetailView:(Task *)task addingToList:(BOOL)adding;
 
 @end

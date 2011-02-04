@@ -20,8 +20,8 @@
 @property (nonatomic, retain) IBOutlet UINavigationController *navController;
 @property (nonatomic, retain) NSMutableArray *tasks;
 
-- (void) loadTasks;
-- (void) saveTasks;
+- (void)loadTasks;
+- (void)saveTasks;
 
 @end
 

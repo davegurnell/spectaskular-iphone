@@ -14,7 +14,6 @@
 @interface TaskDetailViewController( Private )
 
 - (NSMutableArray *)tasks;
-- (void)leaveView;
 
 @end
 
@@ -24,7 +23,7 @@
 @synthesize task;
 @synthesize addingToList;
 
-- (id) initWithTask:(Task *)initialTask addingToList:(BOOL)adding {
+- (id)initWithTask:(Task *)initialTask addingToList:(BOOL)adding {
 	self = [super init];
 	if(self) {
 		self.task = initialTask;
@@ -34,12 +33,17 @@
 	return self;
 }
 
+- (void)dealloc {
+	self.task = nil;
+    [super dealloc];
+}
+
 - (NSMutableArray *)tasks {
 	SpectaskularAppDelegate *delegate = [UIApplication sharedApplication].delegate;
 	return delegate.tasks;
 }
 
-- (void) viewDidLoad {
+- (void)viewDidLoad {
 	self.navigationItem.leftBarButtonItem =
 		[[[UIBarButtonItem alloc] initWithTitle:@"Cancel"
 										  style:UIBarButtonItemStylePlain
@@ -59,31 +63,20 @@
 	[super viewWillAppear:animated];
 }
 
-- (void) dealloc {
-	self.task = nil;
-    [super dealloc];
-}
-
 #pragma mark -
 #pragma mark Actions
 
-- (void) donePressed {
+- (void)donePressed {
 	self.task.name = self.nameField.text;
-
-	NSLog(@"Done task %@", task);
 
 	if(self.addingToList) {
 		[[self tasks] insertObject:self.task atIndex:0];
 	}
 
-	[self leaveView];
+	[self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)cancelPressed {
-	[self leaveView];
-}
-
-- (void)leaveView {
 	[self.navigationController popViewControllerAnimated:YES];
 }
 
