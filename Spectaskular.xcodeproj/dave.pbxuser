@@ -10,9 +10,9 @@
 	};
 	1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1965, 1768}}";
-			sepNavSelRange = "{704, 0}";
-			sepNavVisRange = "{0, 2012}";
+			sepNavIntBoundsRect = "{{0, 0}, {873, 1313}}";
+			sepNavSelRange = "{703, 0}";
+			sepNavVisRange = "{0, 1543}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* Spectaskular */ = {
@@ -124,6 +124,10 @@
 			551187AA12FC771E0032BB69 /* PBXTextBookmark */ = 551187AA12FC771E0032BB69 /* PBXTextBookmark */;
 			551187AB12FC771E0032BB69 /* PBXTextBookmark */ = 551187AB12FC771E0032BB69 /* PBXTextBookmark */;
 			551187AC12FC771E0032BB69 /* PBXTextBookmark */ = 551187AC12FC771E0032BB69 /* PBXTextBookmark */;
+			551187AF12FC776F0032BB69 /* PBXTextBookmark */ = 551187AF12FC776F0032BB69 /* PBXTextBookmark */;
+			551187B012FC776F0032BB69 /* PBXTextBookmark */ = 551187B012FC776F0032BB69 /* PBXTextBookmark */;
+			551187B112FC776F0032BB69 /* PBXTextBookmark */ = 551187B112FC776F0032BB69 /* PBXTextBookmark */;
+			551187B212FC776F0032BB69 /* PBXTextBookmark */ = 551187B212FC776F0032BB69 /* PBXTextBookmark */;
 			551301D412FAD6DB00A8C7E8 = 551301D412FAD6DB00A8C7E8 /* PBXTextBookmark */;
 			551301EB12FAED2600A8C7E8 = 551301EB12FAED2600A8C7E8 /* PBXTextBookmark */;
 			5515F07D12F9F7A9009BB588 = 5515F07D12F9F7A9009BB588 /* PBXTextBookmark */;
@@ -166,7 +170,7 @@
 		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
 		name = "SpectaskularAppDelegate.m: 33";
 		rLen = 0;
-		rLoc = 726;
+		rLoc = 703;
 		rType = 0;
 		vrLen = 1950;
 		vrLoc = 0;
@@ -235,7 +239,7 @@
 		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
 		name = "SpectaskularAppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 704;
+		rLoc = 703;
 		rType = 0;
 		vrLen = 2013;
 		vrLoc = 0;
@@ -275,7 +279,7 @@
 		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
 		name = "SpectaskularAppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 704;
+		rLoc = 703;
 		rType = 0;
 		vrLen = 2003;
 		vrLoc = 0;
@@ -315,7 +319,7 @@
 		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
 		name = "SpectaskularAppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 704;
+		rLoc = 703;
 		rType = 0;
 		vrLen = 2003;
 		vrLoc = 0;
@@ -355,7 +359,7 @@
 		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
 		name = "SpectaskularAppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 704;
+		rLoc = 703;
 		rType = 0;
 		vrLen = 2003;
 		vrLoc = 0;
@@ -425,7 +429,7 @@
 		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
 		name = "SpectaskularAppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 704;
+		rLoc = 703;
 		rType = 0;
 		vrLen = 2002;
 		vrLoc = 0;
@@ -475,7 +479,7 @@
 		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
 		name = "SpectaskularAppDelegate.m: 132";
 		rLen = 0;
-		rLoc = 3622;
+		rLoc = 2407;
 		rType = 0;
 		vrLen = 1568;
 		vrLoc = 2134;
@@ -505,9 +509,49 @@
 		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
 		name = "SpectaskularAppDelegate.m: 36";
 		rLen = 0;
-		rLoc = 704;
+		rLoc = 703;
 		rType = 0;
 		vrLen = 2012;
+		vrLoc = 0;
+	};
+	551187AF12FC776F0032BB69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 555A6DF812F97CEB003FE4B3 /* TaskListViewController.m */;
+		name = "TaskListViewController.m: 12";
+		rLen = 0;
+		rLoc = 256;
+		rType = 0;
+		vrLen = 1762;
+		vrLoc = 0;
+	};
+	551187B012FC776F0032BB69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
+		name = "SpectaskularAppDelegate.m: 132";
+		rLen = 0;
+		rLoc = 2407;
+		rType = 0;
+		vrLen = 1690;
+		vrLoc = 2012;
+	};
+	551187B112FC776F0032BB69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
+		name = "SpectaskularAppDelegate.m: 39";
+		rLen = 0;
+		rLoc = 797;
+		rType = 0;
+		vrLen = 1464;
+		vrLoc = 0;
+	};
+	551187B212FC776F0032BB69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
+		name = "SpectaskularAppDelegate.m: 35";
+		rLen = 0;
+		rLoc = 703;
+		rType = 0;
+		vrLen = 1543;
 		vrLoc = 0;
 	};
 	551301D412FAD6DB00A8C7E8 /* PBXTextBookmark */ = {
@@ -535,7 +579,7 @@
 		fRef = 1D3623250D0F684500981E51 /* SpectaskularAppDelegate.m */;
 		name = "SpectaskularAppDelegate.m: 41";
 		rLen = 0;
-		rLoc = 1294;
+		rLoc = 777;
 		rType = 0;
 		vrLen = 1996;
 		vrLoc = 0;
@@ -630,9 +674,9 @@
 	};
 	555A6DF812F97CEB003FE4B3 /* TaskListViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1325, 1638}}";
-			sepNavSelRange = "{442, 0}";
-			sepNavVisRange = "{0, 1689}";
+			sepNavIntBoundsRect = "{{0, 0}, {1325, 1664}}";
+			sepNavSelRange = "{256, 0}";
+			sepNavVisRange = "{0, 1762}";
 			sepNavWindowFrame = "{{65, 98}, {1158, 883}}";
 		};
 	};
